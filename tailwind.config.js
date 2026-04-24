@@ -1,0 +1,127 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          red:    '#FF0000',
+          yellow: '#FFDE00',
+          blue:   '#3B4CCA',
+        },
+        primary: {
+          DEFAULT:   '#bc0100',
+          container: '#eb0000',
+          on:        '#ffffff',
+          'fixed':   '#ffdad4',
+          'fixed-dim': '#ffb4a8',
+          inverse:   '#ffb4a8',
+        },
+        secondary: {
+          DEFAULT:   '#6d5e00',
+          container: '#fddc00',
+          on:        '#ffffff',
+          'on-container': '#706000',
+          'fixed':   '#ffe24a',
+          'fixed-dim': '#e3c600',
+        },
+        tertiary: {
+          DEFAULT:   '#3c4dcb',
+          container: '#5768e6',
+          on:        '#ffffff',
+          'fixed':   '#dfe0ff',
+          'fixed-dim': '#bcc2ff',
+        },
+        surface: {
+          DEFAULT:            '#f9f9f9',
+          dim:                '#dadada',
+          bright:             '#f9f9f9',
+          card:               '#ffffff',
+          container:          '#eeeeee',
+          'container-low':    '#f3f3f3',
+          'container-high':   '#e8e8e8',
+          'container-highest':'#e2e2e2',
+          variant:            '#e2e2e2',
+          tint:               '#c00100',
+          inverse:            '#2f3131',
+        },
+        'on-surface':         '#1a1c1c',
+        'on-surface-variant': '#603e39',
+        'inverse-on-surface': '#f1f1f1',
+        outline:              '#956d67',
+        'outline-variant':    '#ebbbb4',
+        error: {
+          DEFAULT:   '#ba1a1a',
+          container: '#ffdad6',
+          on:        '#ffffff',
+          'on-container': '#93000a',
+        },
+      },
+      fontFamily: {
+        headline: ['"Plus Jakarta Sans"', 'sans-serif'],
+        body:     ['Inter', 'sans-serif'],
+      },
+      fontSize: {
+        'display':    ['48px', { lineHeight: '1.1', fontWeight: '800', letterSpacing: '-0.02em' }],
+        'h1':         ['32px', { lineHeight: '1.2', fontWeight: '800' }],
+        'h2':         ['24px', { lineHeight: '1.3', fontWeight: '700' }],
+        'h3':         ['20px', { lineHeight: '1.4', fontWeight: '700' }],
+        'body-lg':    ['18px', { lineHeight: '1.6' }],
+        'body-md':    ['16px', { lineHeight: '1.6' }],
+        'label-bold': ['14px', { lineHeight: '1.2', fontWeight: '700' }],
+        'caption':    ['12px', { lineHeight: '1.4', fontWeight: '500' }],
+      },
+      borderRadius: {
+        sm:   '0.25rem',
+        DEFAULT: '0.5rem',
+        md:   '0.75rem',
+        lg:   '1rem',
+        xl:   '1.5rem',
+        full: '9999px',
+      },
+      spacing: {
+        xs:   '4px',
+        sm:   '12px',
+        base: '8px',
+        md:   '24px',
+        lg:   '48px',
+        xl:   '80px',
+      },
+      maxWidth: {
+        container: '1280px',
+      },
+      boxShadow: {
+        'pokeball': '0 4px 24px 0 rgba(188,1,0,0.15), inset 0 1px 0 rgba(255,255,255,0.4)',
+        'card':     '0 2px 12px 0 rgba(26,28,28,0.08), inset 0 1px 0 rgba(255,255,255,0.6)',
+        'card-hover': '0 8px 32px 0 rgba(26,28,28,0.14), inset 0 1px 0 rgba(255,255,255,0.6)',
+        'pressed':  '0 1px 2px 0 rgba(26,28,28,0.08)',
+        'fab':      '0 6px 24px 0 rgba(188,1,0,0.35)',
+      },
+      keyframes: {
+        charge: {
+          '0%':   { width: '0%' },
+          '100%': { width: 'var(--stat-pct)' },
+        },
+        fadeUp: {
+          '0%':   { opacity: '0', transform: 'translateY(16px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        pulse: {
+          '0%, 100%': { opacity: '1' },
+          '50%':      { opacity: '0.6' },
+        },
+        shimmer: {
+          '0%':   { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
+      },
+      animation: {
+        charge:  'charge 1s ease-out forwards',
+        fadeUp:  'fadeUp 0.5s ease-out forwards',
+        pulse:   'pulse 2s ease-in-out infinite',
+        shimmer: 'shimmer 1.5s infinite linear',
+      },
+    },
+  },
+  plugins: [],
+};

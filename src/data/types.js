@@ -1,0 +1,45 @@
+// Pokémon type → Tailwind bg color classes (Adventure Dex palette)
+export const TYPE_COLORS = {
+  normal:   'bg-[#A8A878]',
+  fire:     'bg-[#F08030]',
+  water:    'bg-[#6890F0]',
+  electric: 'bg-[#F8D030]',
+  grass:    'bg-[#78C850]',
+  ice:      'bg-[#98D8D8]',
+  fighting: 'bg-[#C03028]',
+  poison:   'bg-[#A040A0]',
+  ground:   'bg-[#E0C068]',
+  flying:   'bg-[#A890F0]',
+  psychic:  'bg-[#F85888]',
+  bug:      'bg-[#A8B820]',
+  rock:     'bg-[#B8A038]',
+  ghost:    'bg-[#705898]',
+  dragon:   'bg-[#7038F8]',
+  dark:     'bg-[#705848]',
+  steel:    'bg-[#B8B8D0]',
+  fairy:    'bg-[#EE99AC]',
+};
+
+// Type → hex for gradient borders on cards
+export const TYPE_HEX = {
+  normal:   '#A8A878',
+  fire:     '#F08030',
+  water:    '#6890F0',
+  electric: '#F8D030',
+  grass:    '#78C850',
+  ice:      '#98D8D8',
+  fighting: '#C03028',
+  poison:   '#A040A0',
+  ground:   '#E0C068',
+  flying:   '#A890F0',
+  psychic:  '#F85888',
+  bug:      '#A8B820',
+  rock:     '#B8A038',
+  ghost:    '#705898',
+  dragon:   '#7038F8',
+  dark:     '#705848',
+  steel:    '#B8B8D0',
+  fairy:    '#EE99AC',
+};
+
+export const ALL_TYPES = Object.keys(TYPE_COLORS);
